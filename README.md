@@ -46,19 +46,18 @@ virtual-assistant/
     uvicorn main:app --host 0.0.0.0 --port 8000
 
     ```
- 5. **Test the application:**      
-   - Health check of API:-
-    ```
-    curl http://localhost:8000/health
-    ```
-   
-
-   - Processing input:-
-     ```bash
-     curl -X POST "http://localhost:8000/process" -H "Content-Type: application/json" -d '{"text": "play music"}'
-     ```
-     Expected output: {"response": "Playing music now.."}
      
+5. **Docker Deployment**
+  - **5.1** **Build Docker Image**
+    ```
     
+    docker build -t virtual-assistant .
+    ```
+   - **5.2** **Run the container**
+     ```
+     
+     docker run -p 8000:8000 virtual-assistant
+
+     ```  
 
     
