@@ -1,0 +1,12 @@
+# Logs
+logs/
+*.log
+
+# Python bytecode
+*.pyc
+__pycache__/
+*.pyo
+
+
+# Environment files
+.env
