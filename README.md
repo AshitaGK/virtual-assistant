@@ -48,7 +48,7 @@ virtual-assistant/
     ```
  5. **Test the application:**      
    - Health check of API:-
-    ```bash
+    ```
     curl http://localhost:8000/health
     ```
    
