@@ -11,7 +11,7 @@ This is a simple AI virtual assistant built with FastAPI, designed to recognize 
 
 ## Prerequisites
 - Python 3.9
-- Docker (optional, for containerization)
+- Docker (for containerization)
 
 ## Project Structure
 ```
