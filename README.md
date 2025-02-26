@@ -30,15 +30,35 @@ virtual-assistant/
    ```bash
    git clone <repository-url>
    cd virtual-assistant
+   
+2.  **Set up virtual environment**:
+     ```bash
+     python -m venv venv
+     source venv/bin/activate
 
-2. **Install dependencies**:
+3. **Install dependencies**:
     ```bash
     pip install -r requirements.txt
 
    ```
-3. **Run the Application**:
+4. **Run the Application**:
     ```bash
     uvicorn main:app --host 0.0.0.0 --port 8000
 
     ```
-       
+ 5. **Test the application:**      
+   - Health check of API:-
+    ```bash
+    curl http://localhost:8000/health
+    ```
+    Expected response: {"status": "ok"}
+
+   - Processing input:-
+     ```bash
+     curl -X POST "http://localhost:8000/process" -H "Content-Type: application/json" -d '{"text": "play music"}'
+     ```
+     Expected output: {"response": "Playing music now.."}
+     
+    
+
+    
