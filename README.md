@@ -51,7 +51,7 @@ virtual-assistant/
     ```bash
     curl http://localhost:8000/health
     ```
-    Expected response: {"status": "ok"}
+   
 
    - Processing input:-
      ```bash
